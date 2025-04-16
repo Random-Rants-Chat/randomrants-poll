@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Poll server - Random Rants</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        /*windowDialogContainer*/
+        --popup-dialog-font: "arial";
+        /*windowDialogBox*/
+        --popup-dialog-background: #fff;
+        --popup-dialog-border-radius: 10px;
+        --popup-dialog-text-color: #000;
+        /*windowDialogButton*/
+        --popup-dialog-button-background: #5985ff;
+        --popup-dialog-button-hover-background: #4275ff;
+        --popup-dialog-button-text-color: #fff;
+        --popup-dialog-button-radius: 5px;
+        /*windowDialogInput*/
+        --popup-dialog-input-background: #fff;
+        --popup-dialog-input-border-width: 1.5px;
+        --popup-dialog-input-border-color: #bababa;
+        --popup-dialog-input-text-color: #000;
+        /*windowDialogHeader*/
+        --popup-dialog-message-size: 16px;
+      }
+      
+      .windowDialogContainer {
+        font-family: var(--popup-dialog-font);
+      }
+      .windowDialogBackground {
+        background: black;
+      }
+      .windowDialogBox {
+        background: var(--popup-dialog-background);
+        border-radius: var(--popup-dialog-border-radius);
+        color: var(--popup-dialog-text-color);
+      }
+      .windowDialogButton {
+        background: var(--popup-dialog-button-background);
+        color: var(--popup-dialog-button-text-color);
+        border-radius: var(--popup-dialog-button-radius);
+      }
+      .windowDialogButton:hover {
+        background: var(--popup-dialog-button-hover-background);
+      }
+      .windowDialogInput {
+        background: var(--popup-dialog-input-background);
+        border-style: solid;
+        border-width: var(--popup-dialog-input-border-width);
+        border-color: var(--popup-dialog-input-border-color);
+        color: var(--popup-dialog-input-text-color);
+        outline: none;
+      }
+      .windowDialogHeader {
+        font-weight: bold;
+        font-size: var(--popup-dialog-message-size);
+      }
+    </style>
+    <span>
+      Polling is managed mostly be Random Rants, this only provides a bit of managing polls for backend, and contains the dialogs for polls.
+    </span>
+    <script src="dialogs.js"></script>
+    <script src="poll.js"></script>
+    <script>
+      /*pollDialogs.displayResults({
+        question: "Test",
+        choices: ["Choice 1", "Choice 2"],
+        votes: {
+          0: ["User 1"],
+          1: ["User 2"]
+        }
+      });*/
+    </script>
+  </body>
+</html>
