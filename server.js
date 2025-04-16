@@ -153,6 +153,10 @@ const server = http.createServer(async function (req, res) {
         votes: poll.votes,
       };
       res.end(JSON.stringify(safePoll));
+      
+      setTimeout(() => {
+        savedPolls[id] = undefined;
+      },1000*60);
     } else {
       res.statusCode = 404;
       res.end("");
